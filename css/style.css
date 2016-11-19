@@ -1,0 +1,197 @@
+/* Main Page */
+
+#homepage {
+	background-image: url('../img/bg2.png');
+	/* background-color: #2854b9; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden; 
+}
+
+#homepagetext {
+	text-align: center;
+	color: #fff;
+	padding-top: 18%;
+}
+
+#homepagetext h1 {
+	font-size: 40px;
+	font-family: 'Nevis';
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+#homepagetext h2 {
+	font-size: 30px;
+	font-family: 'GL';
+	letter-spacing: 1px;
+	padding-top: 3%;
+}
+
+.mainbtn{
+	margin-top: 3%;
+	color: #fff;
+	border: 2px solid;
+	border-color: #fff;
+	text-align: center;
+	width: 140px;
+	height: 60px;
+	border-radius: 0;
+	padding: 0;
+	line-height: 55px;
+}
+
+.mainbtn p {
+	font-family: "Kano";
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+
+#conlink {
+	margin-right: 60px;
+	margin-top: 60px;
+	font-size: 16px;
+	position: fixed;
+	right: 0;
+	z-index: 11;
+	cursor: pointer;
+	color: #fff;
+	font-family: "Nevis";
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/* Contacts Bar */
+
+#close {
+	width: 35px;
+	height: 35px;
+	margin-right: 100px;
+	margin-top: 60px;
+	right: 0;
+	z-index: 11;
+	float: right;
+	color: #fff;
+}
+
+#contactsbar {
+	position: fixed;
+  	top: 0;
+  	right: 0;
+	width: 25%;
+	background-color: #000;
+	height: 100%;
+	margin-right: -25%;
+	z-index: 12;
+}
+
+#contactsbar ul {
+	font-size: 2em;
+	list-style-type: none;
+	text-align: center;
+	margin-top: 75%;
+}
+
+#contactsbar li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'GL';
+	letter-spacing: 1px;
+	/* cursor: pointer; */
+	right: 0;
+	bottom: 0;
+	color: #fff;
+}
+
+/* Social icons */
+
+.socicons {
+ 	position: relative;
+ 	display: inline-block;
+ 	padding-right: 4%;
+ }
+
+.socicons img {
+ 	transition: .25s opacity ease-in-out;
+ 	width: 40px;
+ 	height: 40px;
+ }
+
+ img[class*="fbb"], img[class*="ldb"], img[class*="ghb"], img[class*="vkw"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+} 
+
+ img.fbw, .fb:hover img.fbb, img.ldw, .ld:hover img.ldb, img.ghw, .gh:hover img.ghb, img.vkb, .vk:hover img.vkw {
+ 	opacity: 1;
+	z-index: 1; 
+}
+
+.fb:hover img.fbw, img.fbb, .ld:hover img.ldw, img.ldb, .gh:hover img.ghw, img.ghb, .vk:hover img.vkb, img.vkw {
+ opacity: 0;
+ z-index: -1; 
+}
+
+img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.ghb, img.vkb, .vk:hover img.vkw {
+  cursor: pointer;
+}
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* Fonts */
+
+ @font-face {
+  font-family: 'GB';
+  src: url('../fonts/Gilroy-Bold.OTF');
+}
+
+ @font-face {
+  font-family: 'GL';
+  src: url('../fonts/Gilroy-Light.OTF');
+}
+
+@font-face {
+  font-family: 'Nevis';
+  src: url('../fonts/Nevis.TTF');
+}
+
+@font-face {
+  font-family: 'Kano';
+  src: url('../fonts/Kano.OTF');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa Light.OTF');
+}
+
+@font-face {
+  font-family: 'BR';
+  src: url('../fonts/Bjorn-Regular.OTF');
+}
+
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/Intro.OTF');
+}
