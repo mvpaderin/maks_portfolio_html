@@ -14,6 +14,8 @@
 	text-align: center;
 	color: #fff;
 	padding-top: 18%;
+	width: 100vw;
+	height: 100vh;
 }
 
 #homepagetext h1 {
@@ -61,6 +63,27 @@
 	font-family: "Nevis";
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+#conlink:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#conlink:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Contacts Bar */
@@ -114,7 +137,7 @@
  }
 
 .socicons img {
- 	transition: .25s opacity ease-in-out;
+ 	transition: .35s opacity ease-in-out;
  	width: 40px;
  	height: 40px;
  }
@@ -138,6 +161,72 @@
 img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.ghb, img.vkb, .vk:hover img.vkw {
   cursor: pointer;
 }
+
+/* Portfolio section */
+
+#portfoliosection {
+	width: 100vw;
+	height: 100vh;
+	background-color: #1C1C1C;
+}
+
+.portfolioitem, .portfolioitem * {
+	box-sizing: border-box;
+}
+
+.portfolioitem {
+	margin-top: 8%;
+	width: 40%;
+	height: 40%;
+	padding: 0%;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.portfolioimg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.portfolioitem:hover .overlay {
+	opacity: 1;
+}
+
+.description {
+	text-align: center;
+	font-size: 24px;
+	font-family: "Nevis";
+	letter-spacing: 1px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 
 /* Fade */
 .hvr-fade {
