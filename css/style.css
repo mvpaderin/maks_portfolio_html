@@ -1,32 +1,31 @@
 /* Main Page */
 
-#homepage {
-	background-image: url('../img/bg2.png');
+#mainpage {
+	background-color: #EDEDED;
 	/* background-color: #2854b9; */
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
-	height: 100%;
 	overflow-x: hidden; 
 }
 
-#homepagetext {
+#homepage {
+	background-image: url('../img/bg.jpg');
 	text-align: center;
-	color: #fff;
-	padding-top: 18%;
+	color: #000;
+	padding-top: 15%;
 	width: 100vw;
 	height: 100vh;
 }
 
-#homepagetext h1 {
-	font-size: 40px;
-	font-family: 'Nevis';
-	letter-spacing: 3px;
+#homepage h1 {
+	font-size: 100px;
+	font-family: 'Kano';
+	letter-spacing: 4px;
 	text-transform: uppercase;
 }
 
-#homepagetext h2 {
-	font-size: 30px;
+#homepage h2 {
+	font-size: 32px;
 	font-family: 'GL';
 	letter-spacing: 1px;
 	padding-top: 3%;
@@ -34,9 +33,9 @@
 
 .mainbtn{
 	margin-top: 3%;
-	color: #fff;
+	color: #000;
 	border: 2px solid;
-	border-color: #fff;
+	border-color: #000;
 	text-align: center;
 	width: 140px;
 	height: 60px;
@@ -56,10 +55,11 @@
 	margin-top: 60px;
 	font-size: 16px;
 	position: fixed;
+	text-align: center;
 	right: 0;
 	z-index: 11;
 	cursor: pointer;
-	color: #fff;
+	color: #000;
 	font-family: "Nevis";
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -72,7 +72,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #000;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -86,35 +86,31 @@
   transform: scaleX(1);
 }
 
-/* Contacts Bar */
-
-#close {
-	width: 35px;
-	height: 35px;
-	margin-right: 100px;
-	margin-top: 60px;
-	right: 0;
-	z-index: 11;
-	float: right;
+#portfoliosection:hover > #conlink {
 	color: #fff;
 }
+
+/* Contacts Bar */
 
 #contactsbar {
 	position: fixed;
   	top: 0;
   	right: 0;
-	width: 25%;
+	width: 24%;
 	background-color: #000;
 	height: 100%;
-	margin-right: -25%;
+	margin-right: -24%;
 	z-index: 12;
 }
 
 #contactsbar ul {
-	font-size: 2em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-size: 1.9em;
 	list-style-type: none;
 	text-align: center;
-	margin-top: 75%;
+	margin-top: 80%;
 }
 
 #contactsbar li {
@@ -125,6 +121,17 @@
 	/* cursor: pointer; */
 	right: 0;
 	bottom: 0;
+	color: #fff;
+}
+
+#close {
+	width: 35px;
+	height: 35px;
+	margin-right: 100px;
+	margin-top: 60px;
+	right: 0;
+	z-index: 11;
+	float: right;
 	color: #fff;
 }
 
@@ -165,9 +172,10 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 /* Portfolio section */
 
 #portfoliosection {
-	width: 100vw;
-	height: 100vh;
-	background-color: #1C1C1C;
+	min-width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	background-image: url('../img/grid.png');
 }
 
 .portfolioitem, .portfolioitem * {
@@ -175,14 +183,21 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 .portfolioitem {
-	margin-top: 8%;
-	width: 40%;
-	height: 40%;
+	width: 35%;
+	height: 35%;
 	padding: 0%;
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
 	max-width: 100%;
+}
+
+.top {
+	margin-top: 4%;
+}
+
+.left {
+	margin-left: 15%;
 }
 
 .portfolioimg {
@@ -227,6 +242,39 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 	transform: translate(-50%, -50%);
 }
 
+/* Footer */
+
+.footerprint {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: "Kano";
+	color: #545454;
+	text-align: center !important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    background: #EDEDED;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2e2e2e; 
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #2e2e2e; 
+}
+
 
 /* Fade */
 .hvr-fade {
@@ -243,9 +291,9 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #fff;
-  color: #000;
-  border-color: #fff;
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
 }
 
 /* Fonts */
@@ -276,11 +324,16 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 @font-face {
-  font-family: 'BR';
-  src: url('../fonts/Bjorn-Regular.OTF');
+	font-family: 'Bootcamp';
+	src: url('../fonts/Bootcamp-Regular.OTF');
 }
 
 @font-face {
-  font-family: 'Intro';
-  src: url('../fonts/Intro.OTF');
+	font-family: 'OO';
+	src: url('../fonts/OrderLight.TTF');
+}
+
+@font-face {
+	font-family: 'Cosmo';
+	src: url('../fonts/Cosmonaut.TTF');
 }
