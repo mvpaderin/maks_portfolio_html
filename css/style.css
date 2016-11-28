@@ -5,7 +5,7 @@
 	/* background-color: #2854b9; */
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 }
 
 #homepage {
@@ -110,6 +110,8 @@
 	font-size: 1.9em;
 	list-style-type: none;
 	text-align: center;
+	/* margin-top: 80%; */
+	padding-left: 0%;
 	margin-top: 80%;
 }
 
@@ -153,16 +155,16 @@
   position: absolute;
   left: 0;
   top: 0;
-} 
+}
 
  img.fbw, .fb:hover img.fbb, img.ldw, .ld:hover img.ldb, img.ghw, .gh:hover img.ghb, img.vkb, .vk:hover img.vkw {
  	opacity: 1;
-	z-index: 1; 
+	/* z-index: 1; */
 }
 
 .fb:hover img.fbw, img.fbb, .ld:hover img.ldw, img.ldb, .gh:hover img.ghw, img.ghb, .vk:hover img.vkb, img.vkw {
  opacity: 0;
- z-index: -1; 
+ /* z-index: -1; */
 }
 
 img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.ghb, img.vkb, .vk:hover img.vkw {
@@ -259,20 +261,20 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background: #EDEDED;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2e2e2e; 
-    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+    background: #2e2e2e;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #2e2e2e; 
+	background: #2e2e2e;
 }
 
 
@@ -294,6 +296,28 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
   background-color: #000;
   color: #fff;
   border-color: #000;
+}
+
+/* Media settings */
+
+/* Laptops */
+
+@media(max-width:1400px) {
+
+#homepage {
+	padding-top: 13%;
+}
+
+#contactsbar {
+		width: 32%;
+		margin-right: -32%;
+	}
+
+#contactsbar ul {
+		margin-top: 60%;
+		font-size: 1.9em;
+}
+
 }
 
 /* Fonts */

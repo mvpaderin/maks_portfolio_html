@@ -17,13 +17,22 @@ if ($(window).width() > 1020) {
   });
 }
 
-if ($(window).width() > 1020) {
-  $('#close').click(function(){
-  	$('#contactsbar').animate({
-  		marginRight: "-24%"
-  	});
+//Closing contacts bar
+if ($(window).width() > 1400) {
+  $('#close').click(function() {
+    $('#contactsbar').animate(  {
+      marginRight: "-24%"
+    });
   });
 } else {
+$('#close').click(function(){
+  $('#contactsbar').animate({
+    marginRight: "-32%"
+  });
+});
+}
+
+if ($(window).width() < 1020) {
   $('#close').click(function(){
     $('#contactsbar').animate({
       marginLeft: "-100%"
