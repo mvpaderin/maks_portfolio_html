@@ -318,6 +318,13 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 		font-size: 1.9em;
 }
 
+#conlink {
+	margin-right: 60px;
+	margin-top: 60px;
+	font-size: 14px;
+}
+
+
 }
 
 /* Fonts */
