@@ -12,7 +12,7 @@ if ($(window).width() > 1020) {
 } else {
   $('#conlink').click(function(){
     $('#contactsbar').animate({
-      marginLeft: "0%"
+      marginRight: "0%"
     });
   });
 }
@@ -24,20 +24,18 @@ if ($(window).width() > 1400) {
       marginRight: "-24%"
     });
   });
+} else if ($(window).width() < 1020) {
+  $('#close').click(function(){
+    $('#contactsbar').animate({
+      marginRight: "-100%"
+    });
+  });
 } else {
 $('#close').click(function(){
   $('#contactsbar').animate({
     marginRight: "-32%"
   });
 });
-}
-
-if ($(window).width() < 1020) {
-  $('#close').click(function(){
-    $('#contactsbar').animate({
-      marginLeft: "-100%"
-    });
-  });
 }
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin

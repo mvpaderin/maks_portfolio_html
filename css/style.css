@@ -6,25 +6,31 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow-x: hidden;
+	position: relative;
 }
 
 #homepage {
 	background-image: url('../img/bg.jpg');
-	text-align: center;
-	color: #000;
-	padding-top: 15%;
 	width: 100vw;
 	height: 100vh;
+	overflow-x: hidden;
+	position: relative;
 }
 
-#homepage h1 {
+.homepagetext {
+	text-align: center;
+	color: #000;
+	margin-top: 22%;
+}
+
+.homepagetext h1 {
 	font-size: 100px;
 	font-family: 'Kano';
 	letter-spacing: 4px;
 	text-transform: uppercase;
 }
 
-#homepage h2 {
+.homepagetext h2 {
 	font-size: 32px;
 	font-family: 'GL';
 	letter-spacing: 1px;
@@ -142,7 +148,8 @@
 .socicons {
  	position: relative;
  	display: inline-block;
- 	padding-right: 4%;
+ 	width: auto;
+ 	padding-right: 2%;
  }
 
 .socicons img {
@@ -174,10 +181,12 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 /* Portfolio section */
 
 #portfoliosection {
-	min-width: 100vw;
-	min-height: 100vh;
 	position: relative;
+	min-height: 100vh;
+	min-width: 100vw;
+	height: auto;
 	background-image: url('../img/grid.png');
+	overflow: auto;
 }
 
 .portfolioitem, .portfolioitem * {
@@ -185,13 +194,9 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 .portfolioitem {
-	width: 35%;
-	height: 35%;
 	padding: 0%;
 	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	max-width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .top {
@@ -199,7 +204,6 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 .left {
-	margin-left: 15%;
 }
 
 .portfolioimg {
@@ -246,7 +250,7 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 
 /* Footer */
 
-.footerprint {
+#footerprint {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -254,6 +258,8 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 	font-family: "Kano";
 	color: #545454;
 	text-align: center !important;
+	overflow: auto;
+	font-size: 16px;
 }
 
 /* Scrollbar */
@@ -302,7 +308,7 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 
 /* Laptops */
 
-@media(max-width:1400px) {
+@media(max-width:1200px) {
 
 #homepage {
 	padding-top: 13%;
@@ -322,6 +328,59 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 	margin-right: 60px;
 	margin-top: 60px;
 	font-size: 14px;
+}
+
+}
+
+/* Mobiles */
+
+@media(max-width:750px) {
+
+.homepagetext {
+	margin-top: 40%;
+}
+
+
+.homepagetext h1 {
+	font-size: 50px;
+	font-family: 'Kano';
+	letter-spacing: 3px;
+}
+
+.homepagetext h2 {
+	font-size: 32px;
+}
+
+#conlink {
+	margin-right: 30px;
+	margin-top: 60px;
+	font-size: 14px;
+}
+
+#close {
+	margin-right: 55px;
+	margin-top: 55px;
+}
+
+#contactsbar {
+	width: 100%;
+	margin-right: -100%;
+}
+
+#contactsbar ul {
+	font-size: 1.8em;
+}
+
+.socicons {
+ 	padding-right: 2%;
+ }
+
+.top {
+	margin-top: 0%;
+}
+
+#footerprint {
+	font-size: 13px;
 }
 
 
