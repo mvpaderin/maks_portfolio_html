@@ -15,12 +15,20 @@
 	height: 100vh;
 	overflow-x: hidden;
 	position: relative;
+	padding: 0%;
 }
 
 .homepagetext {
 	text-align: center;
 	color: #000;
-	margin-top: 22%;
+	height: 45%;
+	position: absolute;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .homepagetext h1 {
@@ -34,11 +42,11 @@
 	font-size: 32px;
 	font-family: 'GL';
 	letter-spacing: 1px;
-	padding-top: 3%;
+	padding-top: 1.5%;
 }
 
 .mainbtn{
-	margin-top: 3%;
+	margin-top: 2%;
 	color: #000;
 	border: 2px solid;
 	border-color: #000;
@@ -56,6 +64,22 @@
 	font-size: 25px;
 }
 
+#logolink {
+	display: inline-block;
+	margin-left: 60px;
+	margin-top: 30px;
+	font-size: 42px;
+	position: fixed;
+	text-align: center;
+	left: 0;
+	z-index: 11;
+	cursor: pointer;
+	color: #000;
+	font-family: "Anurati";
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
 #conlink {
 	margin-right: 60px;
 	margin-top: 60px;
@@ -69,6 +93,7 @@
 	font-family: "Nevis";
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	display: inline;
 }
 
 #conlink:before {
@@ -236,8 +261,8 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 .description {
 	text-align: center;
 	font-size: 24px;
-	font-family: "Nevis";
-	letter-spacing: 1px;
+	font-family: "Nexa";
+	letter-spacing: 3px;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -324,6 +349,13 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 		font-size: 1.9em;
 }
 
+#logolink {
+	margin-right: 60px;
+	margin-top: 40px;
+	font-size: 35px;
+}
+
+
 #conlink {
 	margin-right: 60px;
 	margin-top: 60px;
@@ -349,6 +381,12 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 
 .homepagetext h2 {
 	font-size: 32px;
+}
+
+#logolink {
+	margin-left: 30px;
+	margin-top: 40px;
+	font-size: 35px;
 }
 
 #conlink {
@@ -414,16 +452,6 @@ img.fbw, .fb:hover img.fbb, img.ldw, .fb:hover img.ldb, img.ghw, .fb:hover img.g
 }
 
 @font-face {
-	font-family: 'Bootcamp';
-	src: url('../fonts/Bootcamp-Regular.OTF');
-}
-
-@font-face {
-	font-family: 'OO';
-	src: url('../fonts/OrderLight.TTF');
-}
-
-@font-face {
-	font-family: 'Cosmo';
-	src: url('../fonts/Cosmonaut.TTF');
+  font-family: 'Anurati';
+  src: url('../fonts/Anurati.OTF');
 }
