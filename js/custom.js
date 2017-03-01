@@ -5,9 +5,9 @@ $(window).load(function() {
 
 if ($(window).width() > 1020) {
   $('#conlink').click(function(){
-	$('#contactsbar').animate({
-		marginRight: "0%"
-	});
+  $('#contactsbar').animate({
+    marginRight: "0%"
+  });
 });
 } else {
   $('#conlink').click(function(){
@@ -18,10 +18,16 @@ if ($(window).width() > 1020) {
 }
 
 //Closing contacts bar
-if ($(window).width() > 1400) {
+if ($(window).width() > 1900) {
   $('#close').click(function() {
     $('#contactsbar').animate(  {
       marginRight: "-24%"
+    });
+  });
+} else if (($(window).width() < 1900) && ($(window).width() > 1400)) {
+  $('#close').click(function(){
+    $('#contactsbar').animate({
+      marginRight: "-35%"
     });
   });
 } else if ($(window).width() < 1020) {
@@ -33,7 +39,7 @@ if ($(window).width() > 1400) {
 } else {
 $('#close').click(function(){
   $('#contactsbar').animate({
-    marginRight: "-32%"
+    marginRight: "-50%"
   });
 });
 }
